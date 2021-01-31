@@ -57,6 +57,16 @@ $(document).ready(function () {
     dots: false,
     arrows: true,
     rtl: dir_lang,
+    
+    responsive: [
+
+      {
+        breakpoint: 997,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 
   // beauty-slider
