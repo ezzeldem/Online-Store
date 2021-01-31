@@ -404,7 +404,7 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
 }
 
 .nav-section .nav-ul ul li a {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Oswald", sans-serif;
   color: white;
 }
