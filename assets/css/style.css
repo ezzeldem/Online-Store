@@ -1437,6 +1437,13 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   .newsletter-section .newsletter-box .newsletter-from .form-group {
     width: 100%;
   }
+  .comment-section .comment-slider .comment-slider-item .prag {
+    font-size: 12px;
+  }
+  .newsletter-section {
+    background-position: left;
+    padding: 100px 0;
+  }
   .footer-section .footer-title {
     margin: 10px 0;
     padding: 3px 39px;
