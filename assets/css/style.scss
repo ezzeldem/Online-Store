@@ -190,6 +190,10 @@ span {
     text-align: center;
     position: relative;
     overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
       img {
         &:last-of-type {
@@ -247,6 +251,8 @@ span {
       color: rgba($dark-color, 1);
       font-weight: 400;
       z-index: 22;
+      background-color: rgba($white-color, 1);
+      padding: 4px;
     }
     img {
       &:last-of-type {

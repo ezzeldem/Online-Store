@@ -151,7 +151,7 @@ $(document).ready(function () {
   //   owl slider
 
   $('.owl-carousel.best-saling-slider ,.owl-carousel.blog-slider').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
     navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],

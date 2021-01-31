@@ -187,6 +187,16 @@ span {
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product-box .img-box:hover img:last-of-type {
@@ -262,6 +272,8 @@ span {
   color: #070707;
   font-weight: 400;
   z-index: 22;
+  background-color: white;
+  padding: 4px;
 }
 
 .product-box .img-box img {
