@@ -88,8 +88,8 @@ span {
   visibility: hidden;
   justify-content: center;
   font-size: 20px;
-  background-color: transparent;
-  color: rgba($dark-color, 1);
+  background-color: rgba($black-color, 1);
+  color: rgba($white-color, 1);
   border: 1px solid rgba($dark-color, 1);
   @extend.trans-4;
   border-radius: 50%;
@@ -410,8 +410,8 @@ span {
         @extend.trans-4;
         color: rgba($white-color, 1);
         font-size: 16px;
-        &:hover{
-          color: rgba($min-color,1);
+        &:hover {
+          color: rgba($min-color, 1);
         }
       }
       &.shopping-box {
@@ -431,22 +431,22 @@ span {
           background-color: rgba($min-color, 1);
         }
       }
-      &:last-of-type{
-        .sub-box{
+      &:last-of-type {
+        .sub-box {
           right: 0px;
         }
       }
-      .sub-box{
+      .sub-box {
         position: absolute;
         top: 60px;
         background-color: rgba($white-color, 1);
-        border-top: 3px solid rgba($min-color,1);
+        border-top: 3px solid rgba($min-color, 1);
         min-width: 200px;
-        right:-51px;
+        right: -51px;
         z-index: 999999999;
         padding: 10px;
         display: none;
-        .ul-title{
+        .ul-title {
           font-size: 14px;
           color: rgba($dark-color, 1);
           font-family: $prag-font;
@@ -455,22 +455,21 @@ span {
           padding: 0 0 5px;
           border-bottom: 1px solid rgba($gray-color2, 0.3);
         }
-        ul{
-          li{
-            a{
+        ul {
+          li {
+            a {
               font-size: 13px;
               font-family: $prag-font;
               font-weight: 500;
               color: rgba($gray-color, 1);
               @extend.trans-4;
-              &:hover{
+              &:hover {
                 color: rgba($min-color, 1);
               }
             }
           }
         }
       }
-
     }
   }
   .search-box {
@@ -491,11 +490,11 @@ span {
     }
     .search-form {
       form {
-        .submit-buttom{
+        .submit-buttom {
           font-size: 20px;
-          color: rgba($white-color ,1);
+          color: rgba($white-color, 1);
           @extend.trans-4;
-          &:hover{
+          &:hover {
             color: rgba($dark-color, 1);
           }
         }
@@ -1280,7 +1279,6 @@ span {
   }
 
   .nav-section {
-    
     .search-box {
       .search-form {
         form {
@@ -1404,14 +1402,13 @@ span {
       }
     }
 
-     .nav-box2{
-        .nav-side-box{
-           .sub-box{
-            top: 43px;
-           }
-          }
+    .nav-box2 {
+      .nav-side-box {
+        .sub-box {
+          top: 43px;
         }
-
+      }
+    }
   }
 
   .intro-section {
@@ -1427,6 +1424,9 @@ span {
         transform: translateY(0) translateX(-50%);
         bottom: 20px;
         flex-wrap: wrap;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
         a {
           flex: 1;
           text-align: center;
@@ -1464,18 +1464,17 @@ span {
       }
     }
   }
-  
 
-  .comment-section{
-     .comment-slider{
-        .comment-slider-item{
-        .prag{
+  .comment-section {
+    .comment-slider {
+      .comment-slider-item {
+        .prag {
           font-size: 12px;
         }
       }
     }
   }
-  .newsletter-section{
+  .newsletter-section {
     background-position: left;
     padding: 100px 0;
   }
