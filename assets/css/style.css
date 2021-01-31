@@ -1322,5 +1322,16 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
     width: 100%;
     float: unset;
   }
+  .copy-footer {
+    text-align: center;
+  }
+  .copy-footer .copy-link {
+    margin: 30px auto;
+  }
+  .copy-footer .sochile-box ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
