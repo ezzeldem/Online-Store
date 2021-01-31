@@ -1425,9 +1425,6 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
     bottom: 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
   }
   .product-box .img-box .icon-box a {
     -webkit-box-flex: 1;
@@ -1440,6 +1437,9 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
   .about-section .side-box {
     padding: 60px 30px;

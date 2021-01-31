@@ -1424,9 +1424,6 @@ span {
         transform: translateY(0) translateX(-50%);
         bottom: 20px;
         flex-wrap: wrap;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
         a {
           flex: 1;
           text-align: center;
@@ -1434,6 +1431,9 @@ span {
             margin: 3px auto;
             opacity: 1;
             transform: scale(1);
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
           }
         }
       }
