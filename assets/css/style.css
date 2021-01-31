@@ -25,7 +25,7 @@ span {
   font-family: "Sacramento", cursive;
 }
 
-.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
+.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .nav-section .search-box, .nav-section .search-box .search-form form .submit-buttom, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -453,6 +453,10 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   font-size: 16px;
 }
 
+.nav-section .nav-box2 .nav-side-box i:hover {
+  color: #fec500;
+}
+
 .nav-section .nav-box2 .nav-side-box.shopping-box .cart-products-count {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -473,6 +477,91 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   font-size: 12px;
   border-radius: 50%;
   background-color: #fec500;
+}
+
+.nav-section .search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #999999;
+  -webkit-box-shadow: 0 53px 72px 0 rgba(61, 61, 61, 0.7);
+          box-shadow: 0 53px 72px 0 rgba(61, 61, 61, 0.7);
+  z-index: 999;
+  -webkit-transform: translateY(-161px);
+          transform: translateY(-161px);
+  visibility: hidden;
+  height: 118px;
+}
+
+.nav-section .search-box.open-search {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  visibility: visible;
+}
+
+.nav-section .search-box .search-form form .submit-buttom {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-section .search-box .search-form form .submit-buttom:hover {
+  color: #070707;
+}
+
+.nav-section .search-box .search-form form .submit-buttom {
+  font-family: "Raleway", sans-serif;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  background-image: url("../img/search_icon.png");
+  background-repeat: no-repeat;
+  background-position: 0;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.nav-section .search-box .search-form form .search-input {
+  width: 90%;
+  font-size: 39px;
+  height: 96px;
+  color: black;
+  -webkit-transition: all 0.4s ease-in-out 0ms;
+  transition: all 0.4s ease-in-out 0ms;
+  border: none;
+  outline: 0;
+  padding-left: 80px;
+  background: transparent;
+  color: white;
+}
+
+.nav-section .search-box .search-form form .search-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.nav-section .search-box .search-form form .search-input:-ms-input-placeholder {
+  color: white;
+}
+
+.nav-section .search-box .search-form form .search-input::-ms-input-placeholder {
+  color: white;
+}
+
+.nav-section .search-box .search-form form .search-input::placeholder {
+  color: white;
+}
+
+.nav-section .search-box .search-form form .closeSearch {
+  cursor: pointer;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  color: white;
+  font-size: 30px;
+  position: relative;
+  margin-top: 70px;
 }
 
 .intro-section {
@@ -1201,8 +1290,11 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
     padding: 20px 0 0;
     font-size: 16px;
   }
+  .nav-section .search-box .search-form form .search-input {
+    font-size: 30px;
+  }
   .nav-section .nav-ul ul li.has-chiled {
-    margin: 0 13px;
+    margin: 0 5px;
     padding: 24px 5px;
   }
   .ready-section .section-title .prag {

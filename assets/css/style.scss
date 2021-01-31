@@ -404,6 +404,9 @@ span {
         @extend.trans-4;
         color: rgba($white-color, 1);
         font-size: 16px;
+        &:hover{
+          color: rgba($min-color,1);
+        }
       }
       &.shopping-box {
         .cart-products-count {
@@ -420,6 +423,72 @@ span {
           font-size: 12px;
           border-radius: 50%;
           background-color: rgba($min-color, 1);
+        }
+      }
+    }
+  }
+  .search-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($gray-color2, 1);
+    box-shadow: 0 53px 72px 0 rgba($gray-color, 0.7);
+    z-index: 999;
+    transform: translateY(-161px);
+    visibility: hidden;
+    height: 118px;
+    @extend.trans-4;
+    &.open-search {
+      transform: translateY(0px);
+      visibility: visible;
+    }
+    .search-form {
+      form {
+        .submit-buttom{
+          font-size: 20px;
+          color: rgba($white-color ,1);
+          @extend.trans-4;
+          &:hover{
+            color: rgba($dark-color, 1);
+          }
+        }
+        .submit-buttom {
+          font-family: $prag-font;
+          transform: translate3d(0, -50%, 0);
+          background-image: url("../img/search_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0;
+          border: none;
+          background-color: transparent;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          margin-top: 35px;
+        }
+        .search-input {
+          width: 90%;
+          font-size: 39px;
+          height: 96px;
+          color: rgba($black-color, 1);
+          -webkit-transition: all 0.4s ease-in-out 0ms;
+          transition: all 0.4s ease-in-out 0ms;
+          border: none;
+          outline: 0;
+          padding-left: 80px;
+          background: transparent;
+          color: rgba($white-color, 1);
+          &::placeholder {
+            color: rgba($white-color, 1);
+          }
+        }
+        .closeSearch {
+          cursor: pointer;
+          transform: translate3d(0, -50%, 0);
+          color: rgba($white-color, 1);
+          font-size: 30px;
+          position: relative;
+          margin-top: 70px;
         }
       }
     }
@@ -1165,11 +1234,21 @@ span {
   }
 
   .nav-section {
+    
+    .search-box {
+      .search-form {
+        form {
+          .search-input {
+            font-size: 30px;
+          }
+        }
+      }
+    }
     .nav-ul {
       ul {
         li {
           &.has-chiled {
-            margin: 0 13px;
+            margin: 0 5px;
             padding: 24px 5px;
           }
         }

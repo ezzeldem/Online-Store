@@ -8,12 +8,11 @@ $(document).ready(function () {
   }
 
   // opne menu
-  $('.nav-section .menu-icon i').click(function(){
+  $('.nav-section .menu-icon i').click(function () {
     $('.nav-section .nav-ul').slideToggle();
   });
 
   // scroleBotton
-
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 500) {
       $(".scrol-box").css({ "opacity": 1, "visibility": "visible", "bottom": '40px' });
@@ -39,11 +38,17 @@ $(document).ready(function () {
 
   // opne footer 
   if ($(window).width() < 772) {
-      $('.footer-section .footer-title').click(function(){
-        $("#" + $(this).data("slide")).slideToggle();
-      });
+    $('.footer-section .footer-title').click(function () {
+      $("#" + $(this).data("slide")).slideToggle();
+    });
   }
-
+  // opne-searchBar
+  $(".nav-section .nav-box2 .nav-side-box#search-icon").click(function () {
+    $(".search-box").addClass("open-search");
+  });
+  $(".nav-section .search-box .search-form form .closeSearch").click(function () {
+    $(".search-box").removeClass("open-search");
+  });
 
   // intro-slider
   $('.intro-slider').slick({
@@ -57,7 +62,7 @@ $(document).ready(function () {
     dots: false,
     arrows: true,
     rtl: dir_lang,
-    
+
     responsive: [
 
       {
@@ -85,7 +90,7 @@ $(document).ready(function () {
       {
         breakpoint: 997,
         settings: {
-          slidesToShow: 2,          
+          slidesToShow: 2,
           centerMode: false,
         }
       },
@@ -107,7 +112,7 @@ $(document).ready(function () {
     prevArrow: "<div class='circle-arrow devo-left'><i class='fa fa-arrow-left'></i></div>",
     nextArrow: "<div class='circle-arrow devo-right'><i class='fa fa-arrow-right'></i></div>",
     responsive: [
-      
+
       {
         breakpoint: 997,
         settings: {
