@@ -25,7 +25,7 @@ span {
   font-family: "Sacramento", cursive;
 }
 
-.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item::after, .beauty-section .beauty-slider .beauty-slider-item, .beauty-section .beauty-slider .beauty-slider-item .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .sub-title, .beauty-section .beauty-slider .beauty-slider-item .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
+.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -350,6 +350,10 @@ span {
   background-color: black;
 }
 
+.nav-section .menu-icon {
+  display: none;
+}
+
 .nav-section .logo-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +365,15 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+}
+
+.nav-section .nav-box-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-section .nav-ul ul {
@@ -545,19 +558,19 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   bottom: 0;
 }
 
-.beauty-section .beauty-slider .slick-center .beauty-slider-item::after {
+.beauty-section .beauty-slider .slick-center .beauty-slider-item .img-box::after {
   opacity: 0;
 }
 
-.beauty-section .beauty-slider .slick-center .beauty-slider-item .sub-title {
+.beauty-section .beauty-slider .slick-center .beauty-slider-item .img-box .sub-title {
   color: white;
 }
 
-.beauty-section .beauty-slider .slick-center .beauty-slider-item .beauty-ul li {
+.beauty-section .beauty-slider .slick-center .beauty-slider-item .img-box .beauty-ul li {
   color: white;
 }
 
-.beauty-section .beauty-slider .slick-center .beauty-slider-item .beauty-ul li:after {
+.beauty-section .beauty-slider .slick-center .beauty-slider-item .img-box .beauty-ul li:after {
   background-color: white;
 }
 
@@ -566,7 +579,7 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   color: #070707;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item {
+.beauty-section .beauty-slider .beauty-slider-item .img-box {
   padding: 150px 20px;
   text-align: center;
   position: relative;
@@ -576,28 +589,28 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   z-index: 1;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item:hover::after {
+.beauty-section .beauty-slider .beauty-slider-item .img-box:hover::after {
   opacity: 0;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item:hover .sub-title {
+.beauty-section .beauty-slider .beauty-slider-item .img-box:hover .sub-title {
   color: white;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item:hover .beauty-ul li {
+.beauty-section .beauty-slider .beauty-slider-item .img-box:hover .beauty-ul li {
   color: white;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item:hover .beauty-ul li:after {
+.beauty-section .beauty-slider .beauty-slider-item .img-box:hover .beauty-ul li:after {
   background-color: white;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item:hover .link-box a {
+.beauty-section .beauty-slider .beauty-slider-item .img-box:hover .link-box a {
   background-color: #fec500;
   color: #070707;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item::after {
+.beauty-section .beauty-slider .beauty-slider-item .img-box::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -609,7 +622,7 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   opacity: 1;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .beauty-slider-link {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-slider-link {
   position: absolute;
   top: 0;
   left: 0;
@@ -617,21 +630,21 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   bottom: 0;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .beauty-title {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title {
   font-family: "Sacramento", cursive;
   color: #fec500;
   font-size: 40px;
   margin: 0;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .sub-title {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title {
   margin: 0;
   font-weight: 700;
   font-size: 38px;
   color: #3d3d3d;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .beauty-ul {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul {
   margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,7 +654,7 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
           justify-content: center;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .beauty-ul li {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li {
   font-size: 18px;
   font-weight: 500;
   padding: 0 10px;
@@ -650,11 +663,11 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   color: #3d3d3d;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .beauty-ul li:first-of-type::after {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li:first-of-type::after {
   display: none;
 }
 
-.beauty-section .beauty-slider .beauty-slider-item .beauty-ul li::after {
+.beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after {
   content: "";
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -667,7 +680,7 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   left: 0;
 }
 
-html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .beauty-ul li::after {
+html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after {
   left: unset;
   right: 0;
 }
@@ -903,6 +916,71 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .beauty-ul li
   padding: 0 8px;
 }
 
+.company-section {
+  padding: 30px 0;
+}
+
+.company-section .company-slider:hover .circle-arrow {
+  opacity: 1;
+}
+
+.company-section .company-slider:hover .circle-arrow.devo-left {
+  left: -50px;
+}
+
+.company-section .company-slider:hover .circle-arrow.devo-right {
+  right: -50px;
+}
+
+.company-section .company-slider .circle-arrow {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+}
+
+.company-section .company-slider .circle-arrow.devo-left {
+  left: -30px;
+}
+
+.company-section .company-slider .circle-arrow.devo-right {
+  right: -30px;
+}
+
+.company-section .company-slider .circle-arrow i {
+  font-size: 20px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 30px;
+  cursor: pointer;
+  border: 1px solid rgba(7, 7, 7, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.company-section .company-slider .circle-arrow i:hover {
+  color: black;
+}
+
+.company-section .company-slider .company-slider-item {
+  text-align: center;
+}
+
+.company-section .company-slider .company-slider-item img {
+  margin: 0 auto;
+}
+
 .newsletter-section {
   background-image: url("../img/footer-top.jpg");
   background-size: cover;
@@ -1089,5 +1167,105 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .beauty-ul li
 .copy-footer .sochile-box ul li:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+@media (max-width: 1220px) {
+  .nav-section .nav-ul ul li.has-chiled a {
+    font-size: 13px;
+  }
+  .about-section .side-box {
+    padding: 70px 15px 54px 67px;
+  }
+  .ready-section {
+    padding: 100px 0;
+  }
+  .product-box .img-box .icon-box {
+    max-width: 47%;
+  }
+  .about-section .section-img {
+    background-size: 110%;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title .min-title {
+    font-size: 40px;
+  }
+  .section-title .sub-title {
+    font-size: 27px;
+  }
+  .section-title .prag {
+    padding: 20px 0 0;
+    font-size: 16px;
+  }
+  .nav-section .nav-ul ul li.has-chiled {
+    margin: 0 13px;
+    padding: 24px 5px;
+  }
+  .ready-section .section-title .prag {
+    width: 100%;
+  }
+  .beauty-section .beauty-slider .slick-active .beauty-slider-item .img-box::after {
+    opacity: 0;
+  }
+  .beauty-section .beauty-slider .slick-active .beauty-slider-item .img-box .sub-title {
+    color: white;
+  }
+  .beauty-section .beauty-slider .slick-active .beauty-slider-item .img-box .beauty-ul li {
+    color: white;
+  }
+  .beauty-section .beauty-slider .slick-active .beauty-slider-item .img-box .beauty-ul li:after {
+    background-color: white;
+  }
+  .beauty-section .beauty-slider .slick-active .beauty-slider-item .img-box .link-box a {
+    background-color: #fec500;
+    color: #070707;
+  }
+  .comment-section .comment-slider .comment-slider-item {
+    width: 100% !important;
+  }
+  .newsletter-section .newsletter-box .newsletter-from .form-group {
+    width: 70%;
+  }
+  .footer-section .footer-title {
+    margin: 36px 39px 5px;
+  }
+}
+
+@media (max-width: 772px) {
+  .nav-section {
+    z-index: 9999999;
+    background-color: #070707;
+  }
+  .nav-section .menu-icon {
+    display: block;
+  }
+  .nav-section .menu-icon i {
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    padding: 20px;
+  }
+  .nav-section .menu-icon i:hover {
+    color: #fec500;
+  }
+  .nav-section .nav-ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    right: 0;
+    background-color: #070707;
+  }
+  .nav-section .nav-ul ul {
+    display: block;
+  }
+  .nav-section .nav-ul ul li.has-chiled {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .intro-section {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
