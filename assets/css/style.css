@@ -479,11 +479,15 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   background-color: #fec500;
 }
 
+.nav-section .nav-box2 .nav-side-box:last-of-type .sub-box {
+  right: 0px;
+}
+
 .nav-section .nav-box2 .nav-side-box .sub-box {
   position: absolute;
   top: 60px;
   background-color: white;
-  border-top: 2px solid #fec500;
+  border-top: 3px solid #fec500;
   min-width: 200px;
   right: -51px;
   z-index: 999999999;

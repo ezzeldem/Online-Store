@@ -425,12 +425,16 @@ span {
           background-color: rgba($min-color, 1);
         }
       }
-
+      &:last-of-type{
+        .sub-box{
+          right: 0px;
+        }
+      }
       .sub-box{
         position: absolute;
         top: 60px;
         background-color: rgba($white-color, 1);
-        border-top: 2px solid rgba($min-color,1);
+        border-top: 3px solid rgba($min-color,1);
         min-width: 200px;
         right:-51px;
         z-index: 999999999;

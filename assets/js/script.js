@@ -52,7 +52,7 @@ $(document).ready(function () {
 
   // opne sub-menu
   $('.nav-section .nav-box2 .nav-side-box').click(function () {
-    $(this).find('.sub-box').slideToggle();
+    $(this).children('.sub-box').slideToggle().parent().siblings().children('.sub-box').slideUp();
   });
 
 
