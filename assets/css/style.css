@@ -1309,5 +1309,18 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   .newsletter-section .newsletter-box .newsletter-from .form-group {
     width: 100%;
   }
+  .footer-section .footer-title {
+    margin: 10px 0;
+    padding: 3px 39px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+  }
+  .footer-section .footer-ul {
+    display: none;
+  }
+  .footer-section .footer-ul li {
+    width: 100%;
+    float: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */

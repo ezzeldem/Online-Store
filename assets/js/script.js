@@ -37,6 +37,13 @@ $(document).ready(function () {
     );
   });
 
+  // opne footer 
+  if ($(window).width() < 772) {
+      $('.footer-section .footer-title').click(function(){
+        $("#" + $(this).data("slide")).slideToggle();
+      });
+  }
+
 
   // intro-slider
   $('.intro-slider').slick({

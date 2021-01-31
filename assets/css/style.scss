@@ -1334,4 +1334,22 @@ span {
            }
          }
        }
+
+       .footer-section{
+          .footer-title{
+            margin: 10px 0;
+            padding: 3px 39px ;
+            background-color: rgba($white-color, .1);
+            font-size: 20px;
+          }
+          .footer-ul{
+            display: none;
+            li{
+              width: 100%;
+              float: unset;
+            }
+          }
+        }
+
+
 }
