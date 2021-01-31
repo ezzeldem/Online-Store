@@ -1309,6 +1309,22 @@ span {
       }
     }
 
+    .about-section{
+      .side-box{
+        padding: 60px 30px;
+      }
+    }
+
+
+    .best-saling-section{
+       .list-group{
+        flex-direction: column;
+        a{
+          margin: 4px 0;
+        }
+       }
+      }
+
     .newsletter-section{
       .newsletter-box{
          .newsletter-from{

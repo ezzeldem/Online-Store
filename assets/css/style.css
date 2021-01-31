@@ -1294,6 +1294,18 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  .about-section .side-box {
+    padding: 60px 30px;
+  }
+  .best-saling-section .list-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-saling-section .list-group a {
+    margin: 4px 0;
+  }
   .newsletter-section .newsletter-box .newsletter-from .form-group {
     width: 100%;
   }
