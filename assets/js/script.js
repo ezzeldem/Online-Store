@@ -7,6 +7,10 @@ $(document).ready(function () {
     var dir_lang = false;
   }
 
+  // opne menu
+  $('.nav-section .menu-icon i').click(function(){
+    $('.nav-section .nav-ul').slideToggle();
+  });
 
   // scroleBotton
 

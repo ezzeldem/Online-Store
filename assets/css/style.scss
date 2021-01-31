@@ -1249,7 +1249,7 @@ span {
     z-index: 9999999;
     background-color: rgba($dark-color, 1);
     .menu-icon{
-      display: block;
+      display: inline-block;
       i{
         cursor: pointer;
         font-size: 22px;
@@ -1267,7 +1267,9 @@ span {
       left: 0;
       padding: 10px;
       right: 0;
+      top: 60px;
       background-color: rgba($dark-color, 1);
+      display: none;
       ul{
         display: block;
         li{
