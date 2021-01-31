@@ -1272,5 +1272,30 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   .intro-section {
     margin: 0;
   }
+  .product-box .img-box .icon-box {
+    max-width: 90%;
+    width: 100%;
+    top: unset;
+    -webkit-transform: translateY(0) translateX(-50%);
+            transform: translateY(0) translateX(-50%);
+    bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product-box .img-box .icon-box a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+  }
+  .product-box .img-box .icon-box a i {
+    margin: 3px auto;
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .newsletter-section .newsletter-box .newsletter-from .form-group {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

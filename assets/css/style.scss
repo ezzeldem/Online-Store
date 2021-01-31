@@ -1286,4 +1286,36 @@ span {
     margin: 0;
   }
 
+
+  .product-box{
+     .img-box{
+        .icon-box{
+          max-width: 90%;
+          width: 100%;
+          top: unset;
+          transform: translateY(0) translateX(-50%);
+          bottom: 20px;
+          flex-wrap: wrap;
+         a{
+           flex: 1;
+           text-align: center;
+           i{
+             margin: 3px auto;
+            opacity: 1;
+            transform: scale(1);
+           }
+         }
+         }
+      }
+    }
+
+    .newsletter-section{
+      .newsletter-box{
+         .newsletter-from{
+            .form-group{
+             width: 100%;
+            }
+           }
+         }
+       }
 }
