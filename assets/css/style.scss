@@ -425,6 +425,42 @@ span {
           background-color: rgba($min-color, 1);
         }
       }
+
+      .sub-box{
+        position: absolute;
+        top: 60px;
+        background-color: rgba($white-color, 1);
+        border-top: 2px solid rgba($min-color,1);
+        min-width: 200px;
+        right:-51px;
+        z-index: 999999999;
+        padding: 10px;
+        display: none;
+        .ul-title{
+          font-size: 14px;
+          color: rgba($dark-color, 1);
+          font-family: $prag-font;
+          font-weight: 600;
+          margin: 10px 0;
+          padding: 0 0 5px;
+          border-bottom: 1px solid rgba($gray-color2, 0.3);
+        }
+        ul{
+          li{
+            a{
+              font-size: 13px;
+              font-family: $prag-font;
+              font-weight: 500;
+              color: rgba($gray-color, 1);
+              @extend.trans-4;
+              &:hover{
+                color: rgba($min-color, 1);
+              }
+            }
+          }
+        }
+      }
+
     }
   }
   .search-box {
@@ -1357,6 +1393,15 @@ span {
         }
       }
     }
+
+     .nav-box2{
+        .nav-side-box{
+           .sub-box{
+            top: 43px;
+           }
+          }
+        }
+
   }
 
   .intro-section {

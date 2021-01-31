@@ -50,6 +50,12 @@ $(document).ready(function () {
     $(".search-box").removeClass("open-search");
   });
 
+  // opne sub-menu
+  $('.nav-section .nav-box2 .nav-side-box').click(function () {
+    $(this).find('.sub-box').slideToggle();
+  });
+
+
   // intro-slider
   $('.intro-slider').slick({
     slidesToShow: 1,

@@ -25,7 +25,7 @@ span {
   font-family: "Sacramento", cursive;
 }
 
-.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .nav-section .search-box, .nav-section .search-box .search-form form .submit-buttom, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
+.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .nav-section .nav-box2 .nav-side-box .sub-box ul li a, .nav-section .search-box, .nav-section .search-box .search-form form .submit-buttom, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -477,6 +477,39 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   font-size: 12px;
   border-radius: 50%;
   background-color: #fec500;
+}
+
+.nav-section .nav-box2 .nav-side-box .sub-box {
+  position: absolute;
+  top: 60px;
+  background-color: white;
+  border-top: 2px solid #fec500;
+  min-width: 200px;
+  right: -51px;
+  z-index: 999999999;
+  padding: 10px;
+  display: none;
+}
+
+.nav-section .nav-box2 .nav-side-box .sub-box .ul-title {
+  font-size: 14px;
+  color: #070707;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin: 10px 0;
+  padding: 0 0 5px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.nav-section .nav-box2 .nav-side-box .sub-box ul li a {
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.nav-section .nav-box2 .nav-side-box .sub-box ul li a:hover {
+  color: #fec500;
 }
 
 .nav-section .search-box {
@@ -1360,6 +1393,9 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   .nav-section .nav-ul ul li.has-chiled {
     margin: 0;
     padding: 10px 0;
+  }
+  .nav-section .nav-box2 .nav-side-box .sub-box {
+    top: 43px;
   }
   .intro-section {
     margin: 0;
