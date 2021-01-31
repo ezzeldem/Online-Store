@@ -118,6 +118,7 @@ $(document).ready(function () {
       {
         breakpoint: 772,
         settings: {
+          arrows: false,
           slidesToShow: 2,
         }
       },
