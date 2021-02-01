@@ -1381,6 +1381,12 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
     z-index: 9999999;
     background-color: #070707;
   }
+  .nav-section .logo-box .logo-link img {
+    height: 42px;
+    padding: 10px 0;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
   .nav-section .menu-icon {
     display: inline-block;
   }
