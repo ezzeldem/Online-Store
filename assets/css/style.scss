@@ -1369,6 +1369,15 @@ span {
   .nav-section {
     z-index: 9999999;
     background-color: rgba($dark-color, 1);
+    .logo-box{
+      .logo-link{
+        img{
+          height: 42px;
+          padding: 10px 0;
+          box-sizing: content-box;
+        }
+      }
+    }
     .menu-icon {
       display: inline-block;
       i {
