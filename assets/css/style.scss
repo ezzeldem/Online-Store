@@ -547,6 +547,21 @@ span {
 .intro-section {
   margin: -98px 0 0;
   .intro-slider {
+
+
+      .intro-slider-item{
+        a{
+          display: block;
+        }
+        .img-back{
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 770px;
+        }
+      }
+
+
     &:hover {
       .circle-arrow {
         opacity: 1;
@@ -765,6 +780,8 @@ span {
   background-repeat: no-repeat;
   padding: 150px 0;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
   .section-title {
     .prag {
       color: rgba($white-color, 1);
@@ -813,12 +830,17 @@ span {
       }
     }
   }
-  .banner-img {
+  .banner-img-ad{
     padding: 40px 0;
     a {
       margin: 3px 0;
       display: block;
       position: relative;
+      img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
       &:after {
         border: 8px solid rgba(255, 255, 255, 0.1);
         bottom: 0;
@@ -930,6 +952,11 @@ span {
           }
         }
         .img-box {
+          img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+          }
           .bloge-link {
             position: relative;
             display: block;
@@ -997,6 +1024,21 @@ span {
 .company-section {
   padding: 30px 0;
   .company-slider {
+    .company-slider-item{
+      text-align: center;
+      img{
+        margin: 0 auto;
+        display: inline-block;
+        width: 80%;
+        height: 40px;
+        object-fit: contain;
+        filter: grayscale(4);
+        @extend.trans-4;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
     &:hover {
       .circle-arrow {
         opacity: 1;
@@ -1225,7 +1267,11 @@ span {
   }
 }
 
+
 // copy-footer
+
+
+
 
 @media (max-width: 1220px) {
   .nav-section {
@@ -1422,8 +1468,14 @@ span {
 
   .intro-section {
     margin: 0;
+    .intro-slider{
+    .intro-slider-item{
+      .img-back{
+        height: 250px;
+      }
+    }
   }
-
+}
   .product-box {
     .img-box {
       .icon-box {

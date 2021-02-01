@@ -25,7 +25,7 @@ span {
   font-family: "Sacramento", cursive;
 }
 
-.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .nav-section .nav-box2 .nav-side-box .sub-box ul li a, .nav-section .search-box, .nav-section .search-box .search-form form .submit-buttom, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
+.trans-4, .scrol-box, .link-box a, .owl-carousel .owl-nav, .owl-carousel .owl-nav button i, .product-box .img-box img, .nav-section, .nav-section .menu-icon i, .nav-section .nav-ul ul li.has-chiled::after, .nav-section .nav-ul ul li a, .nav-section .nav-box2 .nav-side-box i, .nav-section .nav-box2 .nav-side-box .sub-box ul li a, .nav-section .search-box, .nav-section .search-box .search-form form .submit-buttom, .intro-section .intro-slider .circle-arrow, .intro-section .intro-slider .circle-arrow i, .about-section .section-img, .beauty-section .beauty-slider .beauty-slider-item .img-box::after, .beauty-section .beauty-slider .beauty-slider-item .img-box, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .sub-title, .beauty-section .beauty-slider .beauty-slider-item .img-box .beauty-ul li::after, .best-saling-section .list-group .list-group-item, .best-saling-section .tab-content .tab-pane, .best-saling-section .tab-content .tab-pane.active, .comment-section .comment-slider .slick-dots li, .comment-section .comment-slider .slick-dots li button, .comment-section .comment-slider .slick-dots li button:before, .blog-section .blog-slider .item .blog-box .img-box .bloge-link i, .blog-section .blog-slider .item .blog-box .blog-title, .blog-section .blog-slider .item .blog-box .read-link, .blog-section .blog-slider .item .blog-box .read-link i, .company-section .company-slider .company-slider-item img, .company-section .company-slider .circle-arrow, .company-section .company-slider .circle-arrow i, .footer-section .footer-ul li, .footer-section .footer-ul li a, .copy-footer .copy-link, .copy-footer .sochile-box ul li {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -617,6 +617,17 @@ html[dir="rtl"] .nav-section .nav-ul ul li.has-chiled::after {
   margin: -98px 0 0;
 }
 
+.intro-section .intro-slider .intro-slider-item a {
+  display: block;
+}
+
+.intro-section .intro-slider .intro-slider-item .img-back {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 770px;
+}
+
 .intro-section .intro-slider:hover .circle-arrow {
   opacity: 1;
 }
@@ -831,6 +842,8 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   background-repeat: no-repeat;
   padding: 150px 0;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
 }
 
 .ready-section .section-title .prag {
@@ -883,17 +896,24 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   opacity: 1;
 }
 
-.best-saling-section .banner-img {
+.best-saling-section .banner-img-ad {
   padding: 40px 0;
 }
 
-.best-saling-section .banner-img a {
+.best-saling-section .banner-img-ad a {
   margin: 3px 0;
   display: block;
   position: relative;
 }
 
-.best-saling-section .banner-img a:after {
+.best-saling-section .banner-img-ad a img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.best-saling-section .banner-img-ad a:after {
   border: 8px solid rgba(255, 255, 255, 0.1);
   bottom: 0;
   content: "";
@@ -988,6 +1008,13 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
           transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
+.blog-section .blog-slider .item .blog-box .img-box img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .blog-section .blog-slider .item .blog-box .img-box .bloge-link {
   position: relative;
   display: block;
@@ -1059,6 +1086,26 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
 
 .company-section {
   padding: 30px 0;
+}
+
+.company-section .company-slider .company-slider-item {
+  text-align: center;
+}
+
+.company-section .company-slider .company-slider-item img {
+  margin: 0 auto;
+  display: inline-block;
+  width: 80%;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: grayscale(4);
+          filter: grayscale(4);
+}
+
+.company-section .company-slider .company-slider-item img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .company-section .company-slider:hover .circle-arrow {
@@ -1421,6 +1468,9 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   }
   .intro-section {
     margin: 0;
+  }
+  .intro-section .intro-slider .intro-slider-item .img-back {
+    height: 250px;
   }
   .product-box .img-box .icon-box {
     max-width: 90%;
